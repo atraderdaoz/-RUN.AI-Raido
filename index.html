@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Kikundi DApp</title>
+  <meta charset="UTF-8">
+  <title>RUN.AI Radio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="root"></div>
-    <script src="bundle.js"></script>
+
+<h1>📻 RUN.AI Radio</h1>
+
+<select id="stationSelect">
+  <option value="trending">🔥 Trending</option>
+  <option value="chill">🌊 Chill</option>
+  <option value="discovery">🚀 Discovery</option>
+</select>
+
+<br><br>
+
+<audio id="player" controls autoplay></audio>
+
+<p id="status">Loading station...</p>
+
+<script src="app.js"></script>
 </body>
 </html>
