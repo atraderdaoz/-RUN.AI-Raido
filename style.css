@@ -1,0 +1,20 @@
+body {
+  font-family: Arial;
+  text-align: center;
+  background: #0d0d0d;
+  color: white;
+}
+
+h1 {
+  color: #00ffcc;
+}
+
+audio {
+  margin-top: 20px;
+  width: 80%;
+}
+
+select {
+  padding: 10px;
+  font-size: 16px;
+}
