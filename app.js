@@ -3,7 +3,7 @@ const statusText = document.getElementById("status");
 const stationSelect = document.getElementById("stationSelect");
 
 // 🔥 CHANGE THIS
-const API_BASE = "https://YOUR_BACKEND_URL";
+const API_BASE = "https://github.com/atraderdaoz/BACKEND/blob/main/server.js";
 
 async function playStation() {
   const station = stationSelect.value;
