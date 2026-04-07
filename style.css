@@ -1,8 +1,8 @@
 body {
-  font-family: Arial;
-  text-align: center;
   background: #0d0d0d;
   color: white;
+  font-family: Arial;
+  text-align: center;
 }
 
 h1 {
@@ -10,8 +10,8 @@ h1 {
 }
 
 audio {
-  margin-top: 20px;
   width: 80%;
+  margin-top: 20px;
 }
 
 select {
