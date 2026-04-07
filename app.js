@@ -3,7 +3,7 @@ const statusText = document.getElementById("status");
 const stationSelect = document.getElementById("stationSelect");
 
 // 🔥 REPLACE WITH YOUR LIVE BACKEND
-const API_BASE = "https://YOUR_BACKEND_URL";
+const API_BASE = "https://backend-production-ed9e.up.railway.app/audio/DFS1000.mp3";
 
 async function playStation() {
   const station = stationSelect.value;
