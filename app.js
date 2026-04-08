@@ -3,26 +3,21 @@ const statusText = document.getElementById("status");
 const stationSelect = document.getElementById("stationSelect");
 
 // 🔥 REPLACE WITH YOUR LIVE BACKEND
-cconst API_BASE = "https://backend-production-ed9e.up.railway.app";
+const API_BASE = "https://backend-production-ed9e.up.railway.app";
 
 async function playStation() {
-  const station = stationSelect.value;
-
   try {
-    statusText.innerText = "📡 Connecting to " + station + "...";
-
-    const res = await fetch(`${API_BASE}/station/${station}/stream`);
+    const res = await fetch(`${API_BASE}/station/custom/stream`);
     const data = await res.json();
 
-    // Play audio
     player.src = data.audio;
+
     await player.play();
 
-    statusText.innerText = "🎧 Now Playing: " + station;
+    console.log("Playing:", data.audio);
 
   } catch (err) {
-    console.error(err);
-    statusText.innerText = "⚠️ Error loading station";
+    console.error("Error:", err);
   }
 }
 
